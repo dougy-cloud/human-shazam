@@ -29,6 +29,21 @@
         <div id="smallestleftspeaker"></div>
         <div id="smallestrightspeaker"></div>
         <div id="biggerbox">
+          <div class="game-over">
+            <h2>GAME OVER</h2>
+            <div class = "stats-container">
+              <span>Stats :</span>
+            <br>
+            <span>Max Rank : </span> <span id="rank">Shower Singer</span>
+            <br>
+            <span>Max. in a row :</span> <span id="result">0</span>
+            </div>
+            <div id="winning-screen" class = "congrats">
+              <p>You have proven yourself worthy of the title "Human Shazam".
+              <p>Feel free to brag about it to your friends, but above all, never stop listening to music!</p>
+            </div>
+            <button class="replay-btn">TRY AGAIN</button>
+            </div>
           <button id="start" class = "btn">START</button>
           <button id="instructions" class = "btn">INSTRUCTIONS</button>
         </div>
@@ -36,9 +51,10 @@
           <p class ="intro-text">Some people wonder what would life be like without music. </p>
           <p class ="intro-text">Well, the goal of this game is to NEVER find out.</p>
           <div id="answers-container" class="gaming-screen">
-            <div id="answer-a"></div>
-            <div id="answer-b"></div>
-            <div id="answer-c"></div>
+            <div id="answer-a" class="lvl-one-two"></div>
+            <div id="answer-b" class="lvl-one-two"></div>
+            <div id="answer-c" class="lvl-one-two"></div>
+            <input type="text" class="lvl-three"></div>
           </div>
         </div>
         <div id="current-level" class="gaming-screen">

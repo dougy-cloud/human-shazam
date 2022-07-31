@@ -197,11 +197,11 @@ body{
 	border-right: 8px solid black;
 	border-left: 8px solid black;
 	border-top: 10px solid black;
+	position: absolute;
 	height: 40px;
 	width: 400px;
 	top: -50px;
 	left: 150px;
-	position: absolute;
 }
 
 #middlebox{
@@ -217,6 +217,7 @@ body{
 	font-size: 11px;
 	font-family: 'Rokkit', serif;
 	font-weight: 300;
+	padding: 0 8px 0 8px;
 }
 
 .btn{
@@ -229,18 +230,19 @@ body{
 }
 
 
-/* GAMING SCREEN */
+
+/* GAMING SCREEN LV1 LV2*/
 
 .intro{
-	visibility: visible; /*needs to be hidden when game start*/
+	visibility: hidden; /*needs to be hidden when game start*/
 }
 
 .intro-text{
-	visibility: visible; /*needs to be hidden when game start*/
+	visibility: hidden; /*needs to be hidden when game start*/
 }
 
 .gaming-screen{
-	visibility: hidden;
+	visibility: visible;
 }
 
 #biggerbox{
@@ -360,6 +362,83 @@ body{
 
 #current-level p{
 	position: absolute;
-	top: 350px
+	bottom: 110px
+}
+
+/* GAMING SCREEN LVL 3*/
+
+.lvl-three{
+	visibility: hidden; /* needs to be visible when stages 11*/
+}
+#answers-container div{
+	visibility: hidden; /* needs to be hidden when stages 11 */
+}
+
+#answers-container input{
+	position: absolute;
+	top:40px;
+	width: 200px;
+	height: 40px;
+	text-align: center;
+}
+
+/* GAME OVER SCREEN AND WINNING SCREEN */
+
+/* 1. WINNING SCREEN */
+
+#winning-screen{
+	visibility: hidden; /*needs to be hidden if player hasn't completed the 15th stage*/
+}
+
+.congrats{
+	position: absolute;
+	top: 40px;
+	font-size: 13px;
+	padding: 12px;
+}
+
+/* .game-over h1 needs to change title to congrats*/
+/* .replay-btn needs to change from try again to restart*/
+
+/* winning screen work with game-over, same template*/
+
+/*2. GAME OVER SCREEN*/
+.game-over{
+	visibility: hidden; /* needs to visible if three attemps are consumed and the player guessed wrong */
+}
+
+.stats-container{
+	visibility: hidden; /*needs to be visible if game over*/
+}
+
+#middlebox{
+	visibility: hidden; /*needs to be hidden if game over screen is shown*/
+}
+
+.btn{
+	visibility: hidden; /*needs to be hidden if game over screen is shown*/
+}
+
+#current-level{
+	visibility: hidden; /*needs to be hidden if game over screen is shown*/
+}
+
+.game-over{
+	position: absolute;
+	padding-top: 9px;
+	width: 358px;
+	background-color: black;
+	color: white;
+	text-align: center;
+	height: 189px;
+	border: 1px solid greenyellow;
+}
+
+
+.replay-btn{
+	margin-top: 15px;
+	width: 200px;
+	height: 40px;
+	font-weight: bold;
 }
 
