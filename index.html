@@ -1,1 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Human Shazam</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@200&display=swap" rel="stylesheet">
+    </head>
+  <body>
+    <div id="container">
+        <h1>THE HUMAN SHAZAM</h1>
+        <div id="line"></div>
+        <div id="vertical-line-one">
+          <div id="square-left">
+            <div id="red-voyant"></div>
+          </div>
+        </div>
+        <div id="vertical-line-two">
+          <div id="square-right"></div>
+        </div>
+        <div id="leftSpeaker"></div>
+        <div id="rightSpeaker"></div>
+        <div id="smallleftspeaker"></div>
+        <div id="smallrightspeaker"></div>
+        <div id="smallestleftspeaker"></div>
+        <div id="smallestrightspeaker"></div>
+        <div id="biggerbox">
+          <button id="start" class = "btn">START</button>
+          <button id="instructions" class = "btn">INSTRUCTIONS</button>
+        </div>
+        <div id="middlebox">
+          <p class ="intro-text">Some people wonder what would life be like without music. </p>
+          <p class ="intro-text">Well, the goal of this game is to NEVER find out.</p>
+          <div id="answers-container" class="gaming-screen">
+            <div id="answer-a"></div>
+            <div id="answer-b"></div>
+            <div id="answer-c"></div>
+          </div>
+        </div>
+        <div id="current-level" class="gaming-screen">
+          <p>Level 1</p>
+        </div>
+        <div id="handle"></div>
+    </div>
 
+    <div id = "rank-container" class = "gaming-screen">
+      <span>Current Rank: </span> <span id="rank">Shower Singer</span>       
+    </div>
+
+    <div id="gauge-container" class="gaming-screen">
+      <div id="large-g" class="lvl-15"></div>
+      <div id="medium-g" class="lvl-14"></div>
+      <div id="large-g" class="lvl-13"></div>
+      <div id="small-g" class="lvl-12"></div>
+      <div id="medium-g" class="lvl-11"></div>
+      <div id="large-g" class="lvl-10"></div>
+      <div id="small-g" class="lvl-9"></div>
+      <div id="medium-g" class="lvl-8"></div>
+      <div id="small-g" class="lvl-7"></div>
+      <div id="medium-g" class="lvl-6"></div>
+      <div id="large-g" class="lvl-5"></div>
+      <div id="small-g" class="lvl-4"></div>
+      <div id="medium-g" class="lvl-3"></div>
+      <div id="large-g" class="lvl-2"></div>
+      <div id="small-g" class="lvl-1"></div>
+    </div>
+
+    <script src="./src/index.js"></script>
+  </body>
+</html>
