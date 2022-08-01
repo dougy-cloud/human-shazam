@@ -1,0 +1,258 @@
+/* GAMEPLAY */
+
+.game-rules{
+	position: absolute;
+	top: 63px;
+}
+
+#biggerbox{
+    width : 360px;
+    height: 200px;
+    position: absolute;
+    border: 3px solid black;
+    top : 142px;
+    left: 170px;
+	display: flex;
+	align-items: flex-end;
+}
+
+
+#middlebox{
+	width: 250px;
+	height: 120px;
+	position: absolute;
+	border: 1px solid black;
+	top: 170px;
+	left: 228px;
+}
+
+#middlebox p{
+	font-size: 11px;
+	font-family: 'Rokkit', serif;
+	font-weight: 300;
+	padding: 0 8px 0 8px;
+}
+
+.btn{
+	width: 150px;
+	height: 20px;
+	border-radius: 0;
+	background-color: white;
+	margin: 0 auto;
+	margin-bottom:12px;
+}
+
+/* .instructions {
+	visibility: hidden;
+} */
+
+
+/* GAMING SCREEN LV1 LV2 SHOWER SHUFFLER*/
+
+
+/* .intro-text {
+	visibility: visible; 
+}
+
+.gaming-screen{
+	visibility: hidden;
+} */
+
+
+#biggerbox{
+	background-color: gray;
+}
+
+#middlebox{
+	border: 2px solid black;
+	background-color: white ;
+}
+
+#answers-container{
+	height: 116px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+#answers-container div{
+	height: 18px;
+	padding: 5px;
+	width: 200px;
+	border: 2px solid black;
+	border-radius: 15px;
+
+
+}
+#answer-a{
+	position: absolute;
+	top: 5px;
+	left: 18px;
+}
+
+#answer-b{
+	position: absolute;
+	top: 44px;
+}
+
+#answer-c{
+	position: absolute;
+	bottom: 5px;
+}
+
+#rank-container{
+	position: absolute;
+	top: 30px;
+	left: 50px;
+	font-size: 17px;
+	font-weight: bold;
+	color: white;
+}
+
+
+#gauge-container{
+	padding: 25px;
+	height: 350px;
+	width: 170px;
+	position: absolute;
+	background-color: black;
+	left: 50px;
+	top: 95px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+#large-g{
+	border: 2px solid white;
+	border-radius: 3px 5px 7px 0;
+	width: 150px;
+	height: 8px;
+}
+
+#medium-g{
+	border: 2px solid white;
+	border-radius: 3px 5px 7px 0;
+	width: 100px;
+	height: 8px;
+}
+
+#small-g{
+	border: 2px solid white;
+	border-radius: 3px 5px 7px 0;
+	width: 70px;
+	height: 8px;
+}
+
+.lvl-1,
+.lvl-2,
+.lvl-3,
+.lvl-4,
+.lvl-5{
+	background-color: yellow;
+}
+
+.lvl-6,
+.lvl-7,
+.lvl-8,
+.lvl-9,
+.lvl-10{
+	background-color: orange;
+}
+
+.lvl-11,
+.lvl-12,
+.lvl-13,
+.lvl-14,
+.lvl-15{
+	background-color: red;
+}
+
+#current-level{
+	display: flex;
+	justify-content: center;
+}
+
+#current-level p{
+	position: absolute;
+	bottom: 110px
+}
+
+/* GAMING SCREEN LVL 3*/
+
+/* .lvl-three{
+	visibility: hidden; 
+}
+#answers-container div{
+	visibility: hidden; 
+} */
+
+#answers-container input{
+	position: absolute;
+	top:40px;
+	width: 200px;
+	height: 40px;
+	text-align: center;
+}
+
+/* GAME OVER SCREEN AND WINNING SCREEN */
+
+/* 1. WINNING SCREEN */
+
+/* #winning-screen{
+	visibility: hidden;
+} */
+
+.congrats{
+	position: absolute;
+	top: 40px;
+	font-size: 13px;
+	padding: 12px;
+}
+
+/* .game-over h1 needs to change title to congrats*/
+/* .replay-btn needs to change from try again to restart*/
+
+/* winning screen work with game-over, same template*/
+
+/*2. GAME OVER SCREEN*/
+/* .game-over{
+	visibility: hidden;
+}
+
+.stats-container{
+	visibility: hidden; 
+}
+
+#middlebox{
+	visibility: visible; 
+
+
+.btn{
+	visibility: visible; 
+}
+
+#current-level{
+	visibility: hidden; 
+} */
+
+.game-over{
+	position: absolute;
+	padding-top: 9px;
+	width: 358px;
+	background-color: black;
+	color: white;
+	text-align: center;
+	height: 189px;
+	border: 1px solid greenyellow;
+}
+
+
+.replay-btn{
+	margin-top: 15px;
+	width: 200px;
+	height: 40px;
+	font-weight: bold;
+}
+

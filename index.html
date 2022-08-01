@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Human Shazam</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/deco.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@200&display=swap" rel="stylesheet">
     </head>
   <body>
-    <div id="container">
+
+    <!---SCREEN : INTRO-->
+
+    <div id="container" class = "game-intro">
         <h1>THE HUMAN SHAZAM</h1>
         <div id="line"></div>
         <div id="vertical-line-one">
@@ -68,63 +72,362 @@
         <div id="smallestleftspeaker"></div>
         <div id="smallestrightspeaker"></div>
         <div id="biggerbox">
-          <div class="game-over">
-            <h2>GAME OVER</h2>
-            <div class = "stats-container">
-              <span>Stats :</span>
-            <br>
-            <span>Max Rank : </span> <span id="rank">Shower Singer</span>
-            <br>
-            <span>Max. in a row :</span> <span id="result">0</span>
-            </div>
-            <div id="winning-screen" class = "congrats">
-              <p>You have proven yourself worthy of the title "Human Shazam".
-              <p>Feel free to brag about it to your friends, but above all, never stop listening to music!</p>
-            </div>
-            <button class="replay-btn">TRY AGAIN</button>
-            </div>
           <button id="start" class = "btn">START</button>
           <button id="instructions" class = "btn">INSTRUCTIONS</button>
-        </div>
+    </div>
         <div id="middlebox">
           <p class ="intro-text">Some people wonder what would life be like without music. </p>
           <p class ="intro-text">Well, the goal of this game is to NEVER find out.</p>
-          <div id="answers-container" class="gaming-screen">
-            <div id="answer-a" class="lvl-one-two"></div>
-            <div id="answer-b" class="lvl-one-two"></div>
-            <div id="answer-c" class="lvl-one-two"></div>
-            <input type="text" class="lvl-three"></div>
-          </div>
+          <div class = "game-rules">       
+            <p>Level 1 : Select the right answer. </p>
+            <p>Level 2 : Select the right artist/band. </p>
+            <p>Level 3 : Enter the name of the song.</p></div>
+        </div>  
         </div>
-        <div id="current-level" class="gaming-screen">
-          <p>Level 1</p>
+    </div>   
+    <div id="handle" class = "game-intro"></div>
+
+    <!--SCREEN : RULES-->
+
+ 
+
+<!---SCREEN : GAMING-->
+    <div id="container" class = "shower-shuffler">
+      <h1>THE HUMAN SHAZAM</h1>
+      <div id="line"></div>
+      <div id="vertical-line-one">
+        <div id="square-left">
+          <div id="red-voyant"></div>
         </div>
-        <div id="handle"></div>
+      </div>
+      <div id="vertical-line-two">
+        <div id="square-right"></div>
+      </div>
+      <div id="large-rectangle"></div>
+    <div id="rectangle-grip"></div>
+    <div id="regulator-container">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
-
-
-    <div id = "rank-container" class = "gaming-screen">
-      <span>Current Rank: </span> <span id="rank">Shower Singer</span>       
+    <div id="horizontal-line"></div>
+    <div id="regdot-container">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
+    <div id="regulator"></div>
+    <div id="volume-container">
+      <div id="volume-btn"></div>
+      <div id="volume-btn"></div>
+      <div id="volume-btn"></div>
+  </div>
+    <div id="first-line-volume"></div>
+    <div id="middle-line-volume"></div>
+    <div id="last-line-volume"></div>
+      <div id="leftSpeaker"></div>
+      <div id="rightSpeaker"></div>
+      <div id="smallleftspeaker"></div>
+      <div id="smallrightspeaker"></div>
+      <div id="smallestleftspeaker"></div>
+      <div id="smallestrightspeaker"></div>
+      <div id="biggerbox">
+        <button id="start" class = "btn">PLAY SONG</button>
+      </div> 
+      <div id = "middlebox">
+        <div id="answers-container" class="gaming-screen">
+          <div id="answer-a" class="lvl-one-two"></div>
+          <div id="answer-b" class="lvl-one-two"></div>
+          <div id="answer-c" class="lvl-one-two"></div>
+        </div>
+      </div>
+  </div>
+  <div id="handle" class = "shower-shuffler"></div>
 
-    <div id="gauge-container" class="gaming-screen">
-      <div id="large-g" class="lvl-15"></div>
-      <div id="medium-g" class="lvl-14"></div>
-      <div id="large-g" class="lvl-13"></div>
-      <div id="small-g" class="lvl-12"></div>
-      <div id="medium-g" class="lvl-11"></div>
-      <div id="large-g" class="lvl-10"></div>
-      <div id="small-g" class="lvl-9"></div>
-      <div id="medium-g" class="lvl-8"></div>
-      <div id="small-g" class="lvl-7"></div>
-      <div id="medium-g" class="lvl-6"></div>
-      <div id="large-g" class="lvl-5"></div>
-      <div id="small-g" class="lvl-4"></div>
-      <div id="medium-g" class="lvl-3"></div>
-      <div id="large-g" class="lvl-2"></div>
-      <div id="small-g" class="lvl-1"></div>
+  <div id = "rank-container" class = "shower-shuffler">
+    <span>Current Rank: </span> <span id="rank">Shower Singer</span>       
+  </div>
+  <div id="current-level" class="shower-shuffler">
+    <p>Level 1</p>
+  </div>
+  <div id="gauge-container" class="shower-shuffler">
+    <div id="large-g" class="lvl-15"></div>
+    <div id="medium-g" class="lvl-14"></div>
+    <div id="large-g" class="lvl-13"></div>
+    <div id="small-g" class="lvl-12"></div>
+    <div id="medium-g" class="lvl-11"></div>
+    <div id="large-g" class="lvl-10"></div>
+    <div id="small-g" class="lvl-9"></div>
+    <div id="medium-g" class="lvl-8"></div>
+    <div id="small-g" class="lvl-7"></div>
+    <div id="medium-g" class="lvl-6"></div>
+    <div id="large-g" class="lvl-5"></div>
+    <div id="small-g" class="lvl-4"></div>
+    <div id="medium-g" class="lvl-3"></div>
+    <div id="large-g" class="lvl-2"></div>
+    <div id="small-g" class="lvl-1"></div>
+  </div>
+
+  <!--SCREEN : LVL 3-->
+
+  <div id="container" class = "shazam-master">
+    <h1>THE HUMAN SHAZAM</h1>
+    <div id="line"></div>
+    <div id="vertical-line-one">
+      <div id="square-left">
+        <div id="red-voyant"></div>
+      </div>
     </div>
+    <div id="vertical-line-two">
+      <div id="square-right"></div>
+    </div>
+    <div id="large-rectangle"></div>
+  <div id="rectangle-grip"></div>
+  <div id="regulator-container">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div id="horizontal-line"></div>
+  <div id="regdot-container">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div id="regulator"></div>
+  <div id="volume-container">
+    <div id="volume-btn"></div>
+    <div id="volume-btn"></div>
+    <div id="volume-btn"></div>
+</div>
+  <div id="first-line-volume"></div>
+  <div id="middle-line-volume"></div>
+  <div id="last-line-volume"></div>
+    <div id="leftSpeaker"></div>
+    <div id="rightSpeaker"></div>
+    <div id="smallleftspeaker"></div>
+    <div id="smallrightspeaker"></div>
+    <div id="smallestleftspeaker"></div>
+    <div id="smallestrightspeaker"></div>
+    <div id="biggerbox">
+      <button id="start" class = "btn">START</button>
+      <button id="instructions" class = "btn">INSTRUCTIONS</button>
+    </div>
+    <div id="middlebox">
+      <div id="answers-container" class="gaming-screen">
+        <input type="text" class="lvl-three"></div>
+      </div>
+    </div>
+</div>
+<div id="handle" class = "shazam-master"></div>
 
-    <script src="./src/index.js"></script>
+
+<div id = "rank-container" class = "shazam-master">
+  <span>Current Rank: </span> <span id="rank">Shower Singer</span>       
+</div>
+
+<div id="current-level" class="shazam-master">
+  <p>Level 1</p>
+</div>
+
+<div id="gauge-container" class = "shazam-master">
+  <div id="large-g" class="lvl-15"></div>
+  <div id="medium-g" class="lvl-14"></div>
+  <div id="large-g" class="lvl-13"></div>
+  <div id="small-g" class="lvl-12"></div>
+  <div id="medium-g" class="lvl-11"></div>
+  <div id="large-g" class="lvl-10"></div>
+  <div id="small-g" class="lvl-9"></div>
+  <div id="medium-g" class="lvl-8"></div>
+  <div id="small-g" class="lvl-7"></div>
+  <div id="medium-g" class="lvl-6"></div>
+  <div id="large-g" class="lvl-5"></div>
+  <div id="small-g" class="lvl-4"></div>
+  <div id="medium-g" class="lvl-3"></div>
+  <div id="large-g" class="lvl-2"></div>
+  <div id="small-g" class="lvl-1"></div>
+</div>
+
+<!--SCREEN : GAME OVER-->
+
+<div id="container" class ="you-lose">
+  <h1>THE HUMAN SHAZAM</h1>
+  <div id="line"></div>
+  <div id="vertical-line-one">
+    <div id="square-left">
+      <div id="red-voyant"></div>
+    </div>
+  </div>
+  <div id="vertical-line-two">
+    <div id="square-right"></div>
+  </div>
+  <div id="large-rectangle"></div>
+<div id="rectangle-grip"></div>
+<div id="regulator-container">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+<div id="horizontal-line"></div>
+<div id="regdot-container">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+<div id="regulator"></div>
+<div id="volume-container">
+  <div id="volume-btn"></div>
+  <div id="volume-btn"></div>
+  <div id="volume-btn"></div>
+</div>
+<div id="first-line-volume"></div>
+<div id="middle-line-volume"></div>
+<div id="last-line-volume"></div>
+  <div id="leftSpeaker"></div>
+  <div id="rightSpeaker"></div>
+  <div id="smallleftspeaker"></div>
+  <div id="smallrightspeaker"></div>
+  <div id="smallestleftspeaker"></div>
+  <div id="smallestrightspeaker"></div>
+  <div id="biggerbox">
+    <div class="game-over">
+      <h2>GAME OVER</h2>
+      <div class = "stats-container">
+        <span>Stats :</span>
+      <br>
+      <span>Max Rank : </span> <span id="rank">Shower Singer (1)</span>
+      <br>
+      <span>Max. in a row :</span> <span id="result">0</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="handle" class="you-lose"></div>
+
+
+
+<!--WINNING SCREEN-->
+
+<div id="container" class = "you-win">
+  <h1>THE HUMAN SHAZAM</h1>
+  <div id="line"></div>
+  <div id="vertical-line-one">
+    <div id="square-left">
+      <div id="red-voyant"></div>
+    </div>
+  </div>
+  <div id="vertical-line-two">
+    <div id="square-right"></div>
+  </div>
+  <div id="large-rectangle"></div>
+<div id="rectangle-grip"></div>
+<div id="regulator-container">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+<div id="horizontal-line"></div>
+<div id="regdot-container">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+<div id="regulator"></div>
+<div id="volume-container">
+  <div id="volume-btn"></div>
+  <div id="volume-btn"></div>
+  <div id="volume-btn"></div>
+</div>
+<div id="first-line-volume"></div>
+<div id="middle-line-volume"></div>
+<div id="last-line-volume"></div>
+  <div id="leftSpeaker"></div>
+  <div id="rightSpeaker"></div>
+  <div id="smallleftspeaker"></div>
+  <div id="smallrightspeaker"></div>
+  <div id="smallestleftspeaker"></div>
+  <div id="smallestrightspeaker"></div>
+  <div id="biggerbox">
+    <div class="game-over">
+      <h2>CONGRATS</h2>
+      <div id="winning-screen" class = "congrats">
+        <p>You have proven yourself worthy of the title "Human Shazam".
+        <p>Feel free to brag about it to your friends, but above all, never stop listening to music!</p>
+      </div>
+      <button class="replay-btn">REPLAY</button>
+      </div>
+  </div>
+</div>
+<div id="handle" class = "you-win"></div>
+
+    <script src="index.js"></script>
   </body>
 </html>
