@@ -1,5 +1,6 @@
 const btnStart = document.getElementById('start');
 const btnRules = document.getElementById('instructions');
+const btnPlay = document.getElementById('play')
 const middleBox = document.getElementById('middle-box');
 
 // SCREENS
@@ -43,5 +44,9 @@ btnStart.addEventListener('click', () => {
     };
 });
 
+btnPlay.addEventListener('click', () => {
+    playSong();
+    displayAnswers();
+});
 
     
