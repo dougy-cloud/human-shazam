@@ -1,8 +1,11 @@
 /* GAMEPLAY */
 
 .game-rules{
-	position: absolute;
-	top: 63px;
+display: flex;	
+}
+
+.game-rules p{
+	margin-top: 0;
 }
 
 #biggerbox{
@@ -77,6 +80,7 @@
 }
 
 #answers-container div{
+	font-size: 12px;
 	height: 18px;
 	padding: 5px;
 	width: 200px;
@@ -144,7 +148,7 @@
 	height: 8px;
 }
 
-.lvl-1,
+/* .lvl-1,
 .lvl-2,
 .lvl-3,
 .lvl-4,
@@ -166,7 +170,7 @@
 .lvl-14,
 .lvl-15{
 	background-color: yellow;
-}
+} */
 
 #current-level{
 	display: flex;
@@ -255,3 +259,7 @@
 	font-weight: bold;
 }
 
+
+.hidden{
+	display:none;
+}

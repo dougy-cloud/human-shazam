@@ -14,8 +14,8 @@
   <body>
 
     <!---SCREEN : INTRO - 16 TO 89-->
-
-    <div id="container" class = "game-intro">
+<section id = "game-intro">
+    <div id="container">
         <h1>THE HUMAN SHAZAM</h1>
         <div id="line"></div>
         <div id="vertical-line-one">
@@ -85,13 +85,13 @@
         </div>  
         </div>
     </div>   
-    <div id="handle" class = "game-intro"></div>
+    <div id="handle"></div>
+  </section>
 
-
- 
 
 <!---SCREEN : GAMING LVL1 LVL 2 - 93 TO 185-->
-    <div id="container" class = "shower-shuffler">
+<section id = "shower-shuffler">
+    <div id="container">
       <h1>THE HUMAN SHAZAM</h1>
       <div id="line"></div>
       <div id="vertical-line-one">
@@ -149,24 +149,25 @@
       <div id="smallestrightspeaker"></div>
       <div id="biggerbox">
         <button id="play" class = "btn">PLAY SONG</button>
+        <button id="pause" class = "btn">PAUSE</button>
       </div> 
       <div id = "middlebox">
         <div id="answers-container" class="gaming-screen">
-          <div id="answer-a" class="lvl-one-two"></div>
-          <div id="answer-b" class="lvl-one-two"></div>
-          <div id="answer-c" class="lvl-one-two"></div>
+          <div id="answer-a" class="lvl-one-two" onclick="nextStage(event)"></div>
+          <div id="answer-b" class="lvl-one-two" onclick="nextStage(event)"></div>
+          <div id="answer-c" class="lvl-one-two" onclick="nextStage(event)"></div>
         </div>
       </div>
   </div>
-  <div id="handle" class = "shower-shuffler"></div>
+  <div id="handle"></div>
 
-  <div id = "rank-container" class = "shower-shuffler">
+  <div id = "rank-container">
     <span>Current Rank: </span> <span id="rank">Shower Singer</span>       
   </div>
-  <div id="current-level" class="shower-shuffler">
-    <p>Level 1</p>
+  <div id="current-stage">
+    <p>Stage 1</p>
   </div>
-  <div id="gauge-container" class="shower-shuffler">
+  <div id="gauge-container">
     <div id="large-g" class="lvl-1"></div>
     <div id="medium-g" class="lvl-2"></div>
     <div id="large-g" class="lvl-3"></div>
@@ -183,12 +184,12 @@
     <div id="large-g" class="lvl-14"></div>
     <div id="small-g" class="lvl-15"></div>
   </div>
-
+</section>
 
 
   <!--SCREEN : GAMING LVL 3 - 191 TO 284 -->
-
-  <div id="container" class = "shazam-master">
+<section id = "shazam-master">
+  <div id="container">
     <h1>THE HUMAN SHAZAM</h1>
     <div id="line"></div>
     <div id="vertical-line-one">
@@ -254,18 +255,18 @@
       </div>
     </div>
 </div>
-<div id="handle" class = "shazam-master"></div>
+<div id="handle"></div>
 
 
-<div id = "rank-container" class = "shazam-master">
+<div id = "rank-container">
   <span>Current Rank: </span> <span id="rank">Shower Singer</span>       
 </div>
 
-<div id="current-level" class="shazam-master">
-  <p>Level 1</p>
+<div id="current-stage">
+  <p>Stage 11</p>
 </div>
 
-<div id="gauge-container" class = "shazam-master">
+<div id="gauge-container">
   <div id="large-g" class="lvl-15"></div>
   <div id="medium-g" class="lvl-14"></div>
   <div id="large-g" class="lvl-13"></div>
@@ -282,10 +283,12 @@
   <div id="large-g" class="lvl-2"></div>
   <div id="small-g" class="lvl-1"></div>
 </div>
+</section>
 
 <!--SCREEN : GAME OVER - 288 TO 357-->
 
-<div id="container" class ="you-lose">
+<section id = "you-lose">
+<div id="container">
   <h1>THE HUMAN SHAZAM</h1>
   <div id="line"></div>
   <div id="vertical-line-one">
@@ -354,13 +357,13 @@
     </div>
   </div>
 </div>
-<div id="handle" class="you-lose"></div>
-
+<div id="handle"></div>
+</section>
 
 
 <!--WINNING SCREEN - 363 TO 435-->
-
-<div id="container" class = "you-win">
+<section id = "you-win">
+<div id="container">
   <h1>THE HUMAN SHAZAM</h1>
   <div id="line"></div>
   <div id="vertical-line-one">
@@ -427,8 +430,10 @@
       </div>
   </div>
 </div>
-<div id="handle" class = "you-win"></div>
+<div id="handle"></div>
+</section>
 
-    <script src="index.js"></script>
+<script src="index.js"></script>
+<!-- <script src="shazam.js"></script> -->
   </body>
 </html>
