@@ -27,7 +27,11 @@ const cChoice = document.getElementById('answer-c');
 
 // GAUGE
 let gaugeContainer = document.getElementById("gauge-container");
+const gaugeList = Array.from(gaugeContainer.children);
 
+// STAGE
+const parentStage = document.getElementById("current-stage");
+let currentStage = 1;
 
 // FUNCTIONS
 const playlist =
@@ -146,10 +150,58 @@ const playlist =
     },
 ]
 
+
+
 function getRandomStage(arr){
-    let randomStage = Math.floor(Math.random()*arr.length);
-    return randomStage
+    let randomNum = Math.floor(Math.random()*arr.length);
+    let randomStage = arr[randomNum];
+    return randomStage;
 }
+
+const levelOne = getRandomStage(playlist);
+
+function playClip(){
+    levelOne.clip.play();
+}
+
+
+function printAnswers(){
+    aChoice.innerText = levelOne.answerA;
+    bChoice.innerText = levelOne.answerB;
+    cChoice.innerText = levelOne.answerC;
+}
+
+
+function updateGauge(rightAnswer){
+    if(rightAnswer){
+        gaugeList[15 - currentStage + 1].classList.add('goodAnswer');
+    }
+    else {
+        resetList()
+    }
+}
+
+function updateStage(){
+    parentStage.firstElementChild.innerText = `Stage ${currentStage}`;
+    console.log(parentStage.firstElementChild)
+}
+
+const reset = (div) => {
+div.classList.remove("goodAnswer");
+}
+
+function resetList(){
+   let divToReset = gaugeContainer.querySelectorAll('.goodAnswer');
+    gaugeList.forEach(reset);
+   console.log(divToReset);
+}
+
+function goodAnswer(currentPlaylist, ans){
+    const clickedAnswer = ans.innerText;
+    return clickedAnswer === currentPlaylist.title;
+}
+
+
 
 // loading page
 window.addEventListener('load', () => {
@@ -170,12 +222,37 @@ btnStart.addEventListener('click', () => {
 });
 
 btnPlay.addEventListener('click', () => {
-    const currentStage = getStage(levelOneClips)
-    playAudio();
+    printAnswers(levelOne);
+    playClip(levelOne);
     btnPause.addEventListener('click', () => {
         pauseClip(currentStage);
     });
 
 });
 
+answersContainer.addEventListener('click', (e) => {
+    const answer = e.target.closest('div');
+    const rightAnswer = goodAnswer(levelOne, answer);
+    if (rightAnswer === true){
+        currentStage++;
+    }   else {
+        currentStage = 1;
+    }
+    updateGauge(rightAnswer);
+    updateStage();
+})
 
+
+
+function nextStage(){
+    getRandomStage()
+    printAnswers()
+    updateGauge(rightAnswer)
+    updateStage()
+}
+
+
+// Comment passer au niveau suivant ? Cliquer sur la bonne réponse. Donc la fonction se trouve dans le addEventListener;
+// Si bonne réponse = un autre objet est randomly généré et toutes les fonctions définies au préalable lui sont appliqués.
+// Donc la fonction next stage est conditionné, et si la réponse est la bonne, 
+//
