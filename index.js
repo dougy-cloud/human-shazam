@@ -21,9 +21,9 @@ const gameRules = document.querySelector(".game-rules");
 
 // ANSWERS
 const answersContainer = document.getElementById('answers-container');
-const aChoice = document.getElementById('answer-a');
-const bChoice = document.getElementById('answer-b');
-const cChoice = document.getElementById('answer-c');
+// const aChoice = document.getElementById('answer-a');
+// const bChoice = document.getElementById('answer-b');
+// const cChoice = document.getElementById('answer-c');
 
 // GAUGE
 let gaugeContainer = document.getElementById("gauge-container");
@@ -158,19 +158,26 @@ function getRandomStage(arr){
     return randomStage;
 }
 
-const levelOne = getRandomStage(playlist);
+const currentLevel = getRandomStage(playlist);
 
-function playClip(){
-    levelOne.clip.play();
+const audio = document.getElementById('myAudio');
+
+
+function getClip(){
+    audio.src = currentLevel.clip.url;
+    audio.play();
+}
+
+function pauseClip(){
+    audio.pause();
 }
 
 
 function printAnswers(){
-    aChoice.innerText = levelOne.answerA;
-    bChoice.innerText = levelOne.answerB;
-    cChoice.innerText = levelOne.answerC;
+    document.getElementById('answer-a').innerText = currentLevel.answerA;
+    document.getElementById('answer-b').innerText = currentLevel.answerB;
+    document.getElementById('answer-c').innerText = currentLevel.answerC;
 }
-
 
 function updateGauge(rightAnswer){
     if(rightAnswer){
@@ -202,7 +209,6 @@ function goodAnswer(currentPlaylist, ans){
 }
 
 
-
 // loading page
 window.addEventListener('load', () => {
     youWin.classList.toggle("hidden");
@@ -222,37 +228,26 @@ btnStart.addEventListener('click', () => {
 });
 
 btnPlay.addEventListener('click', () => {
-    printAnswers(levelOne);
-    playClip(levelOne);
-    btnPause.addEventListener('click', () => {
-        pauseClip(currentStage);
-    });
+    console.log("okok")
+    while(currentStage <= 15){
+        printAnswers(currentLevel);
+        console.log("okok2");
+        getClip();
+        btnPause.addEventListener('click', () => {
+            pauseClip();
+        });
+        answersContainer.addEventListener('click', (e) => {
+            console.log("okok3");
+            const answer = e.target.closest('div');
+            const rightAnswer = goodAnswer(currentLevel, answer);
+            if (rightAnswer === true){
+                currentStage++;
+            }   else {
+                currentStage = 1;
+            }
+            updateGauge(rightAnswer);
+            updateStage();
+        });
+    }
 
 });
-
-answersContainer.addEventListener('click', (e) => {
-    const answer = e.target.closest('div');
-    const rightAnswer = goodAnswer(levelOne, answer);
-    if (rightAnswer === true){
-        currentStage++;
-    }   else {
-        currentStage = 1;
-    }
-    updateGauge(rightAnswer);
-    updateStage();
-})
-
-
-
-function nextStage(){
-    getRandomStage()
-    printAnswers()
-    updateGauge(rightAnswer)
-    updateStage()
-}
-
-
-// Comment passer au niveau suivant ? Cliquer sur la bonne réponse. Donc la fonction se trouve dans le addEventListener;
-// Si bonne réponse = un autre objet est randomly généré et toutes les fonctions définies au préalable lui sont appliqués.
-// Donc la fonction next stage est conditionné, et si la réponse est la bonne, 
-//
