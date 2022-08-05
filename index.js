@@ -392,13 +392,13 @@ btnStart.addEventListener('click', () => {
 });
 
 btnPlay.addEventListener('click', () => {
+    let rightAnswer = false;
         printAnswers(currentLevel);
         getClip();
         btnPause.addEventListener('click', () => {
             pauseClip();
         });
         answersContainer.addEventListener('click', (e) => {
-            let rightAnswer = false;
             const answer = e.target.closest('div');
             rightAnswer = goodAnswer(currentLevel, answer);
             if (rightAnswer === true){
