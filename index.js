@@ -188,7 +188,7 @@ const playlist =
         answerB: 'Heatwaves',
         answerC: "It's All So Incredibly Loud",
         rightAnswer : 'Queen - Bohemian Rhapsody',
-        clip: new Audio('music-clips\clips-lvl-1\Bohemian Rhapsody - Queen.mp3')
+        clip: new Audio('/music-clips/clips-lvl-3/Glass Animals - Heat Waves.mp3')
 
     }, 
     {
