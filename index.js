@@ -408,7 +408,6 @@ btnPlay.addEventListener('click', () => {
                 currentStage = 1;
             }
             updateGauge(rightAnswer);
-            console.loge()
             updateStage();
             updateRank(rightAnswer);
             if(rightAnswer === true){
