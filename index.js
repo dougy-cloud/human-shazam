@@ -45,7 +45,7 @@ const playlist =
     answerC: 'The Game',
     rightAnswer: '50 cent',
     level: 2,
-    clip: new Audio('/music-clips/clips-lvl-2/50 cent - P.I.M.P..mp3'),
+    clip: new Audio('./music-clips/clips-lvl-2/50 cent - P.I.M.P..mp3'),
    },
    {
     title: 'Alicia Keys',
@@ -54,7 +54,7 @@ const playlist =
     answerC: 'Whitney House',
     rightAnswer: 'Alicia Keys',
     level: 2,
-    clip: new Audio('/music-clips/clips-lvl-2/Alicia Keys - No One.mp3'),
+    clip: new Audio('./music-clips/clips-lvl-2/Alicia Keys - No One.mp3'),
    },
    {
     title: 'Bilie Eilish',
@@ -63,7 +63,7 @@ const playlist =
     answerC: 'Bilie Eilish',
     rightAnswer: 'Billie Eilish',
     level: 2,
-    clip: new Audio('/music-clips/clips-lvl-2/Billie Eilish - bad guy.mp3'),
+    clip: new Audio('./music-clips/clips-lvl-2/Billie Eilish - bad guy.mp3'),
    },
    {
     title: 'Chopin',
@@ -72,7 +72,7 @@ const playlist =
     answerC: 'Vivaldi',
     rightAnswer: 'Chopin',
     level: 2,
-    clip: new Audio('/music-clips/clips-lvl-2/Chopin - Prelude in E Minor op 28 no 4.mp3'),
+    clip: new Audio('./music-clips/clips-lvl-2/Chopin - Prelude in E Minor op 28 no 4.mp3'),
    },
    {
     title: 'Ella Fitzgerald & Louis Armstrong',
@@ -81,7 +81,7 @@ const playlist =
     answerC: 'Nina Simone & Louis Armstrong',
     rightAnswer: 'Ella Fitzgerald & Louis Armstrong',
     level: 2,
-    clip: new Audio('/music-clips/clips-lvl-2/Ella Fitzgerald and Louis Armstrong - Summertime.mp3'),
+    clip: new Audio('./music-clips/clips-lvl-2/Ella Fitzgerald and Louis Armstrong - Summertime.mp3'),
    },
    {
     title: 'Lauryn Hill',
@@ -90,7 +90,7 @@ const playlist =
     answerC: 'Lauryn Hill',
     rightAnswer: 'Lauryn Hill',
     level: 2,
-    clip: new Audio('/music-clips/clips-lvl-2/Fugees - Killing Me Softly with His Song.mp3'),
+    clip: new Audio('./music-clips/clips-lvl-2/Fugees - Killing Me Softly with His Song.mp3'),
    },
    {
     title: 'Hooverphonic',
@@ -99,7 +99,7 @@ const playlist =
     answerC: 'Hooverphonic',
     rightAnswer: 'Hooverphonic',
     level: 2,
-    clip: new Audio('/music-clips/clips-lvl-2/Hooverphonic - Mad about you.mp3'),
+    clip: new Audio('./music-clips/clips-lvl-2/Hooverphonic - Mad about you.mp3'),
    },
    {
     title: 'Jorja Smith',
@@ -108,7 +108,7 @@ const playlist =
     answerC: 'Kali Uchis',
     rightAnswer: 'Jorja Smith',
     level: 2,
-    clip: new Audio('/music-clips/clips-lvl-2/Jorja Smith - Blue Lights.mp3'),
+    clip: new Audio('./music-clips/clips-lvl-2/Jorja Smith - Blue Lights.mp3'),
    },
    {
     title: 'Lana Del Rey',
@@ -117,7 +117,7 @@ const playlist =
     answerC: 'Lorde',
     rightAnswer: 'Lana Del Rey',
     level: 2,
-    clip: new Audio('/music-clips/clips-lvl-2/Lana Del Rey - Video Games.mp3'),
+    clip: new Audio('./music-clips/clips-lvl-2/Lana Del Rey - Video Games.mp3'),
    },
    {
     title: 'Lou Reed',
@@ -126,7 +126,7 @@ const playlist =
     answerC: 'David Bowie',
     rightAnswer: 'Lou Reed',
     level: 2,
-    clip: new Audio('/music-clips/clips-lvl-2/Lou Reed - Walk on the Wild Side.mp3'),
+    clip: new Audio('./music-clips/clips-lvl-2/Lou Reed - Walk on the Wild Side.mp3'),
    },
    {
     title: 'Rage Against The Machine',
@@ -135,7 +135,7 @@ const playlist =
     answerC: 'Rage Against The Machine',
     rightAnswer: 'Rage Against The Machine',
     level: 2,
-    clip: new Audio('/music-clips/clips-lvl-2/Rage Against The Machine - Killing In the Name.mp3'),
+    clip: new Audio('./music-clips/clips-lvl-2/Rage Against The Machine - Killing In the Name.mp3'),
    },
    {
     title: 'Talking Heads',
@@ -144,7 +144,7 @@ const playlist =
     answerC: 'Television',
     rightAnswer: 'Talking Heads',
     level: 2,
-    clip: new Audio('/music-clips/clips-lvl-2/Talking Heads - Psycho Killer.mp3'),
+    clip: new Audio('./music-clips/clips-lvl-2/Talking Heads - Psycho Killer.mp3'),
    },
    {
     title: 'The Korgis',
@@ -153,7 +153,7 @@ const playlist =
     answerC: 'Stackridge',
     rightAnswer: 'The Korgis',
     level: 2,
-    clip: new Audio("/music-clips/clips-lvl-2/The Korgis - Everybody's Got To Learn Sometime.mp3"),
+    clip: new Audio("./music-clips/clips-lvl-2/The Korgis - Everybody's Got To Learn Sometime.mp3"),
    },
    {
     title: 'The Ronettes',
@@ -162,7 +162,7 @@ const playlist =
     answerC: 'The Shirelles',
     rightAnswer: 'The Ronettes',
     level: 2,
-    clip: new Audio('/music-clips/clips-lvl-2/The Ronettes - Be My Baby.mp3'),
+    clip: new Audio('./music-clips/clips-lvl-2/The Ronettes - Be My Baby.mp3'),
    },
    {
     title: 'The Zombies',
@@ -171,7 +171,7 @@ const playlist =
     answerC: 'The Zombies',
     rightAnswer: 'The Zombies',
     level: 2,
-    clip: new Audio('/music-clips/clips-lvl-2/The Zombies - Time Of The Season.mp3'),
+    clip: new Audio('./music-clips/clips-lvl-2/The Zombies - Time Of The Season.mp3'),
    },
    {
     title: 'CAN',
@@ -180,7 +180,7 @@ const playlist =
     answerC: 'CAN',
     rightAnswer: 'CAN',
     level: 2,
-    clip: new Audio('/music-clips/clips-lvl-2/Vitamin C - Can.mp3')
+    clip: new Audio('./music-clips/clips-lvl-2/Vitamin C - Can.mp3')
    },
    {
         title: 'Heatwaves',
@@ -188,7 +188,7 @@ const playlist =
         answerB: 'Heatwaves',
         answerC: "It's All So Incredibly Loud",
         rightAnswer : 'Queen - Bohemian Rhapsody',
-        clip: new Audio('/music-clips/clips-lvl-3/Glass Animals - Heat Waves.mp3')
+        clip: new Audio('./music-clips/clips-lvl-3/Glass Animals - Heat Waves.mp3')
 
     }, 
     {
@@ -197,7 +197,7 @@ const playlist =
         answerB: 'Céline Dion - Titanic',
         answerC: 'Céline Dion - My Heart Will Go On',
         rightAnswer : 'Céline Dion - My Heart Will Go On',
-        clip: new Audio('/music-clips/clips-lvl-1/Celine Dion - My Heart Will Always Go On.mp3'),
+        clip: new Audio('./music-clips/clips-lvl-1/Celine Dion - My Heart Will Always Go On.mp3'),
     },
     {
         title: 'Eminem - Lose Yourself',
@@ -205,7 +205,7 @@ const playlist =
         answerB: 'Eminem - Lose Yourself',
         answerC: 'Eminem - Mockingbird',
         rightAnswer : 'Eminem - Lose Yourself',
-        clip: new Audio('/music-clips/clips-lvl-1/Eminem - Lose Yourself.mp3'),
+        clip: new Audio('./music-clips/clips-lvl-1/Eminem - Lose Yourself.mp3'),
     },
     {
         title: 'Estelle - American Boy',
@@ -213,7 +213,7 @@ const playlist =
         answerB: 'Estelle - American Boy',
         answerC: 'Esther - American Boy',
         rightAnswer: 'Estelle - American Boy',
-        clip: new Audio('/music-clips/clips-lvl-1/Estelle - American Boy.mp3'),
+        clip: new Audio('./music-clips/clips-lvl-1/Estelle - American Boy.mp3'),
     },
     {
         title: 'Gnarls Barkley - Crazy',
@@ -221,7 +221,7 @@ const playlist =
         answerB: 'Nils Barkley - I remember when',
         answerC: 'Gnarls Barkley - Crazy',
         rightAnswer: 'Gnarls Barkley - Crazy',
-        clip: new Audio('/music-clips/clips-lvl-1/Gnarls Barkley - Crazy.mp3'),
+        clip: new Audio('./music-clips/clips-lvl-1/Gnarls Barkley - Crazy.mp3'),
     },
     {
         title: 'Jeff Buckley - Hallelujah',
@@ -229,7 +229,7 @@ const playlist =
         answerB: 'Shrek - Hallelujah',
         answerC: 'Jeffrey Beckley - Hallelujah',
         rightAnswer: 'Jeff Buckley - Hallelujah',
-        clip: new Audio('/music-clips/clips-lvl-1/Jeff Buckley - Hallelujah.mp3'),
+        clip: new Audio('./music-clips/clips-lvl-1/Jeff Buckley - Hallelujah.mp3'),
     },
     {
         title: 'Kate Bush - Running Up That Hill',
@@ -237,7 +237,7 @@ const playlist =
         answerB: 'Stranger Things - Running Up That Hill',
         answerC: 'Kate Bush - Cloudbusting',
         rightAnswer: 'Kate Bush - Running Up That Hill',
-        clip: new Audio('/music-clips/clips-lvl-1/Kate Bush - Running Up That Hill.mp3'),
+        clip: new Audio('./music-clips/clips-lvl-1/Kate Bush - Running Up That Hill.mp3'),
     },
     {
         title: 'Lady Gaga - Poker Face',
@@ -245,7 +245,7 @@ const playlist =
         answerB: 'Lady Gaga - PopopokerFacePopopokerFace',
         answerC: 'Lady Gaga - Poker Face',
         rightAnswer: 'Lady Gaga - Poker Face',
-        clip: new Audio('/music-clips/clips-lvl-1/Lady Gaga - Poker Face.mp3'),
+        clip: new Audio('./music-clips/clips-lvl-1/Lady Gaga - Poker Face.mp3'),
     },
     {
         title: 'Michael Jackson - The Earth Song',
@@ -253,7 +253,7 @@ const playlist =
         answerB: 'Michael Jackson - The Earth Song',
         answerC: 'Even MJ did a clip about Earth and nothing happened?',
         rightAnswer: 'Michael Jackson - The Earth Song',
-        clip: new Audio('/music-clips/clips-lvl-1/Michael Jackson - Earth song.mp3'),
+        clip: new Audio('./music-clips/clips-lvl-1/Michael Jackson - Earth song.mp3'),
     },
     {
         title: 'Prince - KISS',
@@ -261,7 +261,7 @@ const playlist =
         answerB: 'The Revolution - KISS',
         answerC: 'His Purple Majesty - KISS',
         rightAnswer: 'Prince - KISS',
-        clip: new Audio('/music-clips/clips-lvl-1/Prince - Kiss.mp3'),
+        clip: new Audio('./music-clips/clips-lvl-1/Prince - Kiss.mp3'),
     },
     {
         title: "The Black Eyed Peas - Let's Get It Started",
@@ -269,7 +269,7 @@ const playlist =
         answerB: "The Black Eyed Peas - Let's Get It Started",
         answerC: "The Black Eyed Peas - Hey Mama",
         rightAnswer: "The Black Eyed Peas - Let's Get It Started",
-        clip: new Audio("/music-clips/clips-lvl-1/The Black Eyed Peas - Let's Get It Started.mp3"),
+        clip: new Audio("./music-clips/clips-lvl-1/The Black Eyed Peas - Let's Get It Started.mp3"),
     },
     {
         title: 'The Doors - The End',
@@ -277,7 +277,7 @@ const playlist =
         answerB: 'Velvet Underground - Sunday Morning',
         answerC: 'The Doors - The End',
         rightAnswer: 'The Doors - The End',
-        clip: new Audio('/music-clips/clips-lvl-1/The Doors - The End.mp3'),
+        clip: new Audio('./music-clips/clips-lvl-1/The Doors - The End.mp3'),
     },
     {
         title: 'The Police - Message In A Bottle',
@@ -285,7 +285,7 @@ const playlist =
         answerB: 'The Police - S.O.S to the World',
         answerC: 'The Police - Message In A Bottle',
         rightAnswer: 'The Police - Message In A Bottle',
-        clip: new Audio('/music-clips/clips-lvl-1/The Police - Message in a Bottle.mp3'),
+        clip: new Audio('./music-clips/clips-lvl-1/The Police - Message in a Bottle.mp3'),
     },
     {
         title: 'Whitney Houston - I Wanna Dance With Somebody',
@@ -293,7 +293,7 @@ const playlist =
         answerB: 'Drew Sycamore - I Wanna Be Dancing',
         answerC: 'Whitney House - I Wanna Dance With Somebody',
         rightAnswer: 'Whitney Houston - I Wanna Dance With Somebody',
-        clip: new Audio('/music-clips/clips-lvl-1/Whitney Houston - I Wanna Dance With Somebody.mp3'),
+        clip: new Audio('./music-clips/clips-lvl-1/Whitney Houston - I Wanna Dance With Somebody.mp3'),
     },
 ]
 
