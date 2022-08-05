@@ -33,13 +33,160 @@ const gaugeList = Array.from(gaugeContainer.children);
 const parentStage = document.getElementById("current-stage");
 let currentStage = 1;
 
+//RANK
+let rank = document.getElementById('rank');
+
 // FUNCTIONS
 const playlist =
-[ {
-        title: 'Queen - Bohemian Rhapsody',
-        answerA: "Sorry Jaime - I'm Forever DC",
-        answerB: 'Queen - Bohemian Rhapsody',
-        answerC: 'Freddie Mercury - Bohemian Rhapsody',
+[  {
+    title: '50 cent',
+    answerA: '50 cent',
+    answerB: 'Jadakiss',
+    answerC: 'The Game',
+    rightAnswer: '50 cent',
+    level: 2,
+    clip: new Audio('/music-clips/clips-lvl-2/50 cent - P.I.M.P..mp3'),
+   },
+   {
+    title: 'Alicia Keys',
+    answerA: 'Jorja Smith',
+    answerB: 'Alicia Keys',
+    answerC: 'Whitney House',
+    rightAnswer: 'Alicia Keys',
+    level: 2,
+    clip: new Audio('/music-clips/clips-lvl-2/Alicia Keys - No One.mp3'),
+   },
+   {
+    title: 'Bilie Eilish',
+    answerA: 'Lana Del Rey',
+    answerB: 'Lady Gaga',
+    answerC: 'Bilie Eilish',
+    rightAnswer: 'Billie Eilish',
+    level: 2,
+    clip: new Audio('/music-clips/clips-lvl-2/Billie Eilish - bad guy.mp3'),
+   },
+   {
+    title: 'Chopin',
+    answerA: 'Chopin',
+    answerB: 'Beethoven',
+    answerC: 'Vivaldi',
+    rightAnswer: 'Chopin',
+    level: 2,
+    clip: new Audio('/music-clips/clips-lvl-2/Chopin - Prelude in E Minor op 28 no 4.mp3'),
+   },
+   {
+    title: 'Ella Fitzgerald & Louis Armstrong',
+    answerA: 'Ella Fitzgerald & Louis Armstrong',
+    answerB: 'Aretha Franklin & Louis Armstrong',
+    answerC: 'Nina Simone & Louis Armstrong',
+    rightAnswer: 'Ella Fitzgerald & Louis Armstrong',
+    level: 2,
+    clip: new Audio('/music-clips/clips-lvl-2/Ella Fitzgerald and Louis Armstrong - Summertime.mp3'),
+   },
+   {
+    title: 'Lauryn Hill',
+    answerA: 'Roberta Flack',
+    answerB: 'Ruth Jacobs',
+    answerC: 'Lauryn Hill',
+    rightAnswer: 'Lauryn Hill',
+    level: 2,
+    clip: new Audio('/music-clips/clips-lvl-2/Fugees - Killing Me Softly with His Song.mp3'),
+   },
+   {
+    title: 'Hooverphonic',
+    answerA: 'Son Little',
+    answerB: 'Sting',
+    answerC: 'Hooverphonic',
+    rightAnswer: 'Hooverphonic',
+    level: 2,
+    clip: new Audio('/music-clips/clips-lvl-2/Hooverphonic - Mad about you.mp3'),
+   },
+   {
+    title: 'Jorja Smith',
+    answerA: 'SZA',
+    answerB: 'Jorja Smith',
+    answerC: 'Kali Uchis',
+    rightAnswer: 'Jorja Smith',
+    level: 2,
+    clip: new Audio('/music-clips/clips-lvl-2/Jorja Smith - Blue Lights.mp3'),
+   },
+   {
+    title: 'Lana Del Rey',
+    answerA: 'Lana Del Rey',
+    answerB: 'Lizzie Grant',
+    answerC: 'Lorde',
+    rightAnswer: 'Lana Del Rey',
+    level: 2,
+    clip: new Audio('/music-clips/clips-lvl-2/Lana Del Rey - Video Games.mp3'),
+   },
+   {
+    title: 'Lou Reed',
+    answerA: 'Jim Morrison',
+    answerB: 'Lou Reed',
+    answerC: 'David Bowie',
+    rightAnswer: 'Lou Reed',
+    level: 2,
+    clip: new Audio('/music-clips/clips-lvl-2/Lou Reed - Walk on the Wild Side.mp3'),
+   },
+   {
+    title: 'Rage Against The Machine',
+    answerA: 'Spliknot',
+    answerB: 'Run The Jewels',
+    answerC: 'Rage Against The Machine',
+    rightAnswer: 'Rage Against The Machine',
+    level: 2,
+    clip: new Audio('/music-clips/clips-lvl-2/Rage Against The Machine - Killing In the Name.mp3'),
+   },
+   {
+    title: 'Talking Heads',
+    answerA: 'Ramones',
+    answerB: 'Talking Heads',
+    answerC: 'Television',
+    rightAnswer: 'Talking Heads',
+    level: 2,
+    clip: new Audio('/music-clips/clips-lvl-2/Talking Heads - Psycho Killer.mp3'),
+   },
+   {
+    title: 'The Korgis',
+    answerA: 'N.R.G.',
+    answerB: 'The Korgis',
+    answerC: 'Stackridge',
+    rightAnswer: 'The Korgis',
+    level: 2,
+    clip: new Audio("/music-clips/clips-lvl-2/The Korgis - Everybody's Got To Learn Sometime.mp3"),
+   },
+   {
+    title: 'The Ronettes',
+    answerA: 'The Ronettes',
+    answerB: 'The Crystals',
+    answerC: 'The Shirelles',
+    rightAnswer: 'The Ronettes',
+    level: 2,
+    clip: new Audio('/music-clips/clips-lvl-2/The Ronettes - Be My Baby.mp3'),
+   },
+   {
+    title: 'The Zombies',
+    answerA: 'The Cranberries',
+    answerB: 'The Kinks',
+    answerC: 'The Zombies',
+    rightAnswer: 'The Zombies',
+    level: 2,
+    clip: new Audio('/music-clips/clips-lvl-2/The Zombies - Time Of The Season.mp3'),
+   },
+   {
+    title: 'CAN',
+    answerA: 'The Beatles',
+    answerB: 'Pink Floyd',
+    answerC: 'CAN',
+    rightAnswer: 'CAN',
+    level: 2,
+    clip: new Audio('/music-clips/clips-lvl-2/Vitamin C - Can.mp3')
+   },
+   {
+        title: 'Heatwaves',
+        answerA: "Gooey",
+        answerB: 'Heatwaves',
+        answerC: "It's All So Incredibly Loud",
         rightAnswer : 'Queen - Bohemian Rhapsody',
         clip: new Audio('music-clips\clips-lvl-1\Bohemian Rhapsody - Queen.mp3')
 
@@ -153,12 +300,14 @@ const playlist =
 
 
 function getRandomStage(arr){
+    let emptyArr = []
     let randomNum = Math.floor(Math.random()*arr.length);
-    let randomStage = arr[randomNum];
+    let randomStage = arr[randomNum]
+    emptyArr.push(arr[randomNum]);
     return randomStage;
 }
 
-const currentLevel = getRandomStage(playlist);
+let currentLevel = getRandomStage(playlist);
 
 const audio = document.getElementById('myAudio');
 
@@ -190,7 +339,21 @@ function updateGauge(rightAnswer){
 
 function updateStage(){
     parentStage.firstElementChild.innerText = `Stage ${currentStage}`;
-    console.log(parentStage.firstElementChild)
+}
+
+function updateRank(rightAnswer){
+    if (rightAnswer <= 5){
+        rank.innerText = `Shower Singer`
+    }
+
+    else if(rightAnswer > 5){
+        rank.innerText = `Shazam Shuffler`
+    }
+
+    else if(rightAnswer > 10){
+        rank.innerText = `Shazam Master`
+    }
+
 }
 
 const reset = (div) => {
@@ -200,11 +363,13 @@ div.classList.remove("goodAnswer");
 function resetList(){
    let divToReset = gaugeContainer.querySelectorAll('.goodAnswer');
     gaugeList.forEach(reset);
-   console.log(divToReset);
 }
+
 
 function goodAnswer(currentPlaylist, ans){
     const clickedAnswer = ans.innerText;
+    console.log(currentPlaylist.title);
+    console.log(ans.innerText);
     return clickedAnswer === currentPlaylist.title;
 }
 
@@ -224,30 +389,33 @@ btnRules.addEventListener('click', () => {
 
 btnStart.addEventListener('click', () => {
     showerShuffler.classList.remove("hidden");
-
 });
 
 btnPlay.addEventListener('click', () => {
-    console.log("okok")
-    while(currentStage <= 15){
         printAnswers(currentLevel);
-        console.log("okok2");
         getClip();
         btnPause.addEventListener('click', () => {
             pauseClip();
         });
         answersContainer.addEventListener('click', (e) => {
-            console.log("okok3");
+            let rightAnswer = false;
             const answer = e.target.closest('div');
-            const rightAnswer = goodAnswer(currentLevel, answer);
+            rightAnswer = goodAnswer(currentLevel, answer);
             if (rightAnswer === true){
                 currentStage++;
+                console.log(currentStage)
             }   else {
                 currentStage = 1;
             }
             updateGauge(rightAnswer);
+            console.loge()
             updateStage();
+            updateRank(rightAnswer);
+            if(rightAnswer === true){
+                currentLevel = getRandomStage(playlist);
+                btnPlay.click();
+            }
+        
         });
-    }
 
 });

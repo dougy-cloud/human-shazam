@@ -1,4 +1,4 @@
-# Project's name
+# The Human Shazam
 
 [Click here to see deployed game](http://github.com)
 
@@ -21,13 +21,21 @@ _List of features you might implement after the MVP_
 
 ## Data structure
 _List of classes and methods_
-
+class Audio()
+getRandomStage()
+getClip()
+pauseClip()
+printAnswers()
+updateGauge()
+resetList()
+updateStage()
+updateRank()
+goodAnswer()
 
 ## States y States Transitions
 _List of states (views) of your game_
 * intro screen
 * gaming-screen lvl-one lvl-two
-* gaming-screen lvl-three
 * game-over-screen
 * winning-screen
 
@@ -35,12 +43,12 @@ _List of states (views) of your game_
 ## Task
 _List of tasks in order of priority_
 main - build screens
-main - add "click" addEventListener 
+main - load clips
+main - build game logic 
 
 
 ## Links
 
-- [Trello Link](https://trello.com)
 - [Slides Link](http://slides.com)
-- [Github repository Link](http://github.com)
+- [Github repository Link](https://github.com/dougy-cloud/human-shazam)
 - [Deployment Link](http://github.com)
