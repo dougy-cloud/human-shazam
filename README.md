@@ -1,6 +1,6 @@
 # The Human Shazam
 
-[Click here to see deployed game](http://github.com)
+[Click here to see deployed game](https://dougy-cloud.github.io/human-shazam/)
 
 ## Description
 Human Shazam is a music quiz game to determine whether the player know its music classic or not. It has three difficulty levels. Depending on these difficulty the player would have to guess either the name of the interpret of the song or the name of the song itself. The game ends when three attempts to beat the fifteenth stages are consumed. After that, the player will have access to its statistics : final rank, songs guesses.
